@@ -38,8 +38,7 @@ def compute_gradients(X, y_true, y_pred):
     return (1/m) * np.dot(X.T, (y_pred - y_true))
 
 
-def train(X, y, learning_rate=0.1, num_iterations=1000):
-    global weights
+def train(X, y, weights, learning_rate=0.1, num_iterations=1000):
     for i in range(num_iterations):
         # make estimate
         y_pred = predict(X, weights)
@@ -70,7 +69,7 @@ X_bias = np.hstack([np.ones((X_scaled.shape[0], 1)), X_scaled])
 weights = np.random.randn(X_bias.shape[1])
 
 # TRAIN IT ############################
-weights = train(X_bias, y, learning_rate=0.1, num_iterations=1000)
+weights = train(X_bias, y, weights, learning_rate=0.1, num_iterations=1000)
 
 # TEST IT #############################
 y_pred = predict(X_bias, weights)
