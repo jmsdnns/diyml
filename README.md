@@ -10,6 +10,6 @@ This repo uses numpy and matplotlib, but will try to use plain old python for ev
 
 Techniques:
 
-1. [clustering/](Clustering)
-1. [classification/](Classification)
-1. [nn/](Neural Networks)
+1. [./clustering/](Clustering)
+1. [./classification/](Classification)
+1. [./nn/](Neural Networks)
