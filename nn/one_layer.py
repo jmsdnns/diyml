@@ -73,12 +73,12 @@ hws_new = hws - lr * d_hws  # [[0.30011499 0.40013113],
 
 # PRINT IT
 
-print(f"# ERROR:\n{error}\n")
+print(f"\n# ERROR:\n{error}\n")
 
-print("# WEIGHT UPDATES")
-print(f"## OUTPUT:\n{d_ows}")
-print(f"## HIDDEN:\n{d_hws}\n")
+print("# WEIGHT UPDATES\n")
+print(f"## Output:\n{d_ows}\n")
+print(f"## Hidden:\n{d_hws}\n")
 
-print("# NEW WEIGHTS")
-print(f"## OUTPUT:\n{ows_new}")
-print(f"## HIDDEN:\n{hws_new}\n")
+print("# NEW WEIGHTS\n")
+print(f"## Output:\n{ows_new}\n")
+print(f"## Hidden:\n{hws_new}\n")
