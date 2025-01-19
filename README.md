@@ -8,8 +8,8 @@ I get inspired from time to time to build the tools I use from scratch. I have b
 
 This repo uses numpy and matplotlib, but will try to use plain old python for everything else.
 
-Techniques:
+## What We Got So Far
 
-1. [Clustering](clustering/)
 1. [Classification](classification/)
+1. [Clustering](clustering/)
 1. [Neural Networks](nn/)
