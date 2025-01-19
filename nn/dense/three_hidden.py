@@ -44,7 +44,7 @@ class Layer:
 
     def forward(self, input_data):
         self.input_data = input_data
-        z = np.dot(input_data, self.weights) + self.biases
+        z = np.dot(self.input_data, self.weights) + self.biases
         self.output = sigmoid(z)
         return self.output
 
@@ -68,8 +68,7 @@ def training_loop(inputs, y, epochs, lr, layers):
         # forward pass
         activations = [inputs]
         for layer in layers:
-            fwd_input = activations[-1]
-            fwd_output = layer.forward(fwd_input)
+            fwd_output = layer.forward(activations[-1])
             activations.append(fwd_output)
 
         # compute loss
